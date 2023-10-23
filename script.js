@@ -18,7 +18,7 @@ btn.addEventListener('click',(e)=>{
 function getWeatherDetails(queryLocation) {
     const api_key = `b01e31742d31433790b160124232210`
 
-    let url = `http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${queryLocation}&aqi=yes`;
+    let url = `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${queryLocation}&aqi=yes`;
 
   fetch(url)
     .then((response) => {
